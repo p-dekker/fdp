@@ -1,0 +1,90 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl> a dcat:Resource,
+    dcat:Dataset;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Analytics Distributions";
+  dcterms:title "Cancer Whole Genome Sequencing";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2026-11-02T14:04:26.46122045Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2026-11-02T14:06:54.44296391Z"^^xsd:dateTime;
+  dcterms:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+  dcterms:description "Hartwig Medical Foundation whole genome sequencing dataset. The Hartwig Medical Database is a continuously growing resource containing whole genome and whole transcriptome sequencing data. This is the largest database of metastatic tumor data obtained with WGS in the world. The uniqueness of the database consists of combining genetic data with treatment and treatment outcome data. The incidence of solid tumors in the Netherlands is reflected in the quantity and frequency of the tumor types in the database. In addition to molecular data, the database also contains an ever-growing list of tumor clinical characteristics. Our processes are standardized from sample preparation to patient reporting assuring a highly consistent dataset.";
+  dcterms:conformsTo <https://p-dekker.github.io/fdp/profile/2f08228e-1789-40f8-84cd-28e3288c3604>,
+    <https://p-dekker.github.io/fdp/profile/2f08228e-1789-40f8-84cd-28e3288c3604>;
+  dcterms:language <http://publications.europa.eu/resource/authority/language/ENG>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl#identifier>;
+  dcterms:identifier "http://hartwigmedicalfoundation.nl/wgs";
+  dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED>;
+  dcterms:publisher [ a foaf:Agent;
+      dcterms:identifier "https://ror.org/0428k0n93";
+      foaf:name "Hartwig Medical Foundation";
+      foaf:homepage <https://www.hartwigmedicalfoundation.nl/>;
+      foaf:mbox <mailto:dataaccess@hartwigmedicalfoundation.nl>
+    ];
+  dcat:contactPoint [ a <http://www.w3.org/2006/vcard/ns#Kind>;
+      <http://www.w3.org/2006/vcard/ns#fn> "Data Access Committee of the Hartwig Medical Foundation";
+      <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:dataaccess@hartwigmedicalfoundation.nl>;
+      <http://www.w3.org/2006/vcard/ns#hasUID> <https://ror.org/0428k0n93>;
+      <http://www.w3.org/2006/vcard/ns#hasURL> <https://www.hartwigmedicalfoundation.nl/en/contact/>
+    ];
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+  <http://semanticscience.org/resource/SIO_000628> <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:isPartOf <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl>;
+  dcterms:modified "2026-11-02T15:06:53+01:00"^^xsd:dateTime;
+  <http://data.europa.eu/r5r/applicableLegislation> <http://publications.europa.eu/resource/authority/legal-basis/GENERAL_DATA_PROTECTION_REGULATION>;
+  <http://healthdataportal.eu/ns/health#numberOfUniqueIndividuals> "8250"^^xsd:nonNegativeInteger;
+  dcterms:creator [ a foaf:Agent;
+      dcterms:identifier "https://ror.org/0428k0n93";
+      foaf:name "Hartwig Medical Foundation";
+      foaf:homepage <https://www.hartwigmedicalfoundation.nl/>;
+      foaf:mbox <mailto:dataaccess@hartwigmedicalfoundation.nl>
+    ];
+  dcterms:temporal [ a dcterms:PeriodOfTime;
+      dcat:endDate "2026-11-02T15:06:53+01:00"^^xsd:dateTime;
+      dcat:startDate "2012-05-10T00:00:00+01:00"^^xsd:dateTime
+    ];
+  dcat:keyword "Cancer or benign tumor", "Clinical data", "Diagnosis", "Follow-up",
+    "Metastasis", "Primary", "Response", "Treatment", "Tumor normal matched pair", "Whole genome sequencing" .
+
+<https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl" .
+
+<https://p-dekker.github.io/fdp/analyticsdistribution/> a ldp:DirectContainer, ldp:DirectContainer;
+  dcterms:title "Analytics Distributions", "Analytics Distributions";
+  ldp:hasMemberRelation <http://healthdataportal.eu/ns/health#analytics>, <http://healthdataportal.eu/ns/health#analytics>;
+  ldp:membershipResource <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl>,
+    <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl> .
+
+<https://p-dekker.github.io/fdp/datasetseries/> a ldp:DirectContainer, ldp:DirectContainer;
+  dcterms:title "Dataset Series", "Dataset Series";
+  ldp:hasMemberRelation dcat:inSeries, dcat:inSeries;
+  ldp:membershipResource <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl>,
+    <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl> .
+
+<https://p-dekker.github.io/fdp/distribution/> a ldp:DirectContainer, ldp:DirectContainer;
+  dcterms:title "Distributions", "Distributions";
+  ldp:hasMemberRelation dcat:distribution, dcat:distribution;
+  ldp:membershipResource <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl>,
+    <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl> .
+
+<https://p-dekker.github.io/fdp/sampledistribution/> a ldp:DirectContainer, ldp:DirectContainer;
+  dcterms:title "Sample Distributions", "Sample Distributions";
+  ldp:hasMemberRelation <http://www.w3.org/ns/adms#sample>, <http://www.w3.org/ns/adms#sample>;
+  ldp:membershipResource <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl>,
+    <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl> .
+
+<https://p-dekker.github.io/fdp/profile/2f08228e-1789-40f8-84cd-28e3288c3604> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Dataset Profile", "Dataset Profile" .
+
+<https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .

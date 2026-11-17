@@ -1,0 +1,65 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl> a dcat:Resource,
+    dcat:Catalog;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Hartwig Medical Foundation";
+  dcterms:title "Hartwig Medical Foundation"@en;
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2026-11-02T14:04:25.492917923Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2026-11-02T14:06:55.803819929Z"^^xsd:dateTime;
+  dcterms:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+  dcterms:description "Hartwig Medical Foundation cancer sequencing data catalog"@en;
+  dcterms:language <http://publications.europa.eu/resource/authority/language/ENG>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl#identifier>;
+  dcterms:accessRights <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      dcterms:identifier "https://ror.org/0428k0n93";
+      foaf:name "Hartwig Medical Foundation";
+      foaf:homepage <https://www.hartwigmedicalfoundation.nl/>;
+      foaf:mbox <mailto:dataaccess@hartwigmedicalfoundation.nl>
+    ];
+  dcat:contactPoint [ a <http://www.w3.org/2006/vcard/ns#Kind>;
+      <http://www.w3.org/2006/vcard/ns#fn> "Data Access Committee of the Hartwig Medical Foundation";
+      <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:dataaccess@hartwigmedicalfoundation.nl>;
+      <http://www.w3.org/2006/vcard/ns#hasUID> <https://ror.org/0428k0n93>;
+      <http://www.w3.org/2006/vcard/ns#hasURL> <https://www.hartwigmedicalfoundation.nl/en/contact/>
+    ];
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+  <http://semanticscience.org/resource/SIO_000628> <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:isPartOf <https://p-dekker.github.io/fdp/fdp.ttl>;
+  dcterms:issued "2026-11-02T14:04:25.492917923Z"^^xsd:dateTime;
+  dcterms:modified "2026-11-02T14:04:25.492917923Z"^^xsd:dateTime;
+  dcat:dataset <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl>,
+    <https://p-dekker.github.io/fdp/dataset/56a33e43-40bf-46da-9c99-febff0ff3cfc.ttl>;
+  dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+  dcterms:conformsTo <https://p-dekker.github.io/fdp/profile/a0949e72-4466-4d53-8900-9436d1049a4b> .
+
+<https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl" .
+
+<https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
+
+<https://p-dekker.github.io/fdp/dataset/> a ldp:DirectContainer;
+  dcterms:title "Datasets";
+  ldp:membershipResource <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl>;
+  ldp:hasMemberRelation dcat:dataset;
+  ldp:contains <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl>,
+    <https://p-dekker.github.io/fdp/dataset/56a33e43-40bf-46da-9c99-febff0ff3cfc.ttl> .
+
+<https://p-dekker.github.io/fdp/profile/a0949e72-4466-4d53-8900-9436d1049a4b> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Catalog Profile" .

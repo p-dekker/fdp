@@ -1,0 +1,77 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://p-dekker.github.io/fdp/fdp.ttl> a dcat:Resource, dcat:DataService, <https://w3id.org/fdp/fdp-o#MetadataService>,
+    <https://w3id.org/fdp/fdp-o#FAIRDataPoint>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Catalogs";
+  dcterms:title "FAIR Data Point - beta"@en;
+  dcat:version "1.0"^^xsd:float;
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2026-11-02T13:14:27.48712191Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2026-11-02T14:06:55.937676442Z"^^xsd:dateTime;
+  dcterms:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+  dcterms:description "Contains high-level information about our Whole Genome and Whole Transcriptome, tumour-normal pair cancer sequencing data."@en;
+  dcterms:conformsTo <https://p-dekker.github.io/fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c>,
+    <https://p-dekker.github.io/fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c>;
+  dcterms:language <http://publications.europa.eu/resource/authority/language/ENG>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://p-dekker.github.io/fdp/fdp.ttl#identifier>;
+  dcterms:identifier "https://p-dekker.github.io/fdp/fdp.ttl";
+  <http://www.re3data.org/schema/3-0#repositoryIdentifier> <https://p-dekker.github.io/fdp/fdp.ttl#identifier>;
+  dcterms:accessRights <https://p-dekker.github.io/fdp/fdp.ttl#accessRights>;
+  dcterms:publisher <https://p-dekker.github.io/fdp/fdp.ttl#publisher>;
+  <https://w3id.org/fdp/fdp-o#metadataCatalog> <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl>;
+  dcat:contactPoint <https://p-dekker.github.io/fdp/fdp.ttl#contactPoint>;
+  dcat:endpointDescription <https://p-dekker.github.io/fdp/fdp.ttl#endpoint>;
+  dcat:endpointURL <https://p-dekker.github.io/fdp/fdp.ttl>, <https://p-dekker.github.io/fdp/fdp.ttl>;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+  <https://w3id.org/fdp/fdp-o#fdpSoftwareVersion> "FDP:v1.18.2~0cba71a", "FDP:v1.18.2~0cba71a";
+  <http://semanticscience.org/resource/SIO_000628> <https://p-dekker.github.io/fdp/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <https://p-dekker.github.io/fdp/metrics/5d27e854a9e78eb3f663331cd47cdc13> .
+
+<https://p-dekker.github.io/fdp/fdp.ttl#identifier> a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://p-dekker.github.io/fdp/fdp.ttl" .
+
+<https://p-dekker.github.io/fdp/fdp.ttl#accessRights> a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<https://p-dekker.github.io/fdp/fdp.ttl#publisher> a foaf:Agent;
+  dcterms:identifier "https://ror.org/0428k0n93";
+  foaf:name "Hartwig Medical Foundation";
+  foaf:homepage <https://www.hartwigmedicalfoundation.nl/>;
+  foaf:mbox <mailto:dataaccess@hartwigmedicalfoundation.nl> .
+
+<https://p-dekker.github.io/fdp/catalog/> a ldp:DirectContainer, ldp:DirectContainer;
+  dcterms:title "Catalogs", "Catalogs";
+  ldp:hasMemberRelation <https://w3id.org/fdp/fdp-o#metadataCatalog>, <https://w3id.org/fdp/fdp-o#metadataCatalog>;
+  ldp:membershipResource <https://p-dekker.github.io/fdp/fdp.ttl>, <https://p-dekker.github.io/fdp/fdp.ttl>;
+  ldp:contains <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl> .
+
+<https://p-dekker.github.io/fdp/fdp.ttl#contactPoint> a <http://www.w3.org/2006/vcard/ns#Kind>;
+  <http://www.w3.org/2006/vcard/ns#fn> "Data Access Committee of the Hartwig Medical Foundation";
+  <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:dataaccess@hartwigmedicalfoundation.nl>;
+  <http://www.w3.org/2006/vcard/ns#hasUID> <https://ror.org/0428k0n93>;
+  <http://www.w3.org/2006/vcard/ns#hasURL> <https://www.hartwigmedicalfoundation.nl/en/contact/> .
+
+<https://p-dekker.github.io/fdp/fdp.ttl#endpoint> a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:title "Hartwig Medical Foundation FAIR Data Point Endpoint";
+  dcterms:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+  dcterms:description "This is the FAIR Data Point of the Hartwig Medical Foundation";
+  dcterms:identifier <https://p-dekker.github.io/fdp/fdp.ttl#endpoint>;
+  dcterms:accessRights <http://purl.org/NET/rdflicense/cc-zero1.0>;
+  dcterms:publisher <https://p-dekker.github.io/fdp/fdp.ttl#publisher>;
+  dcat:contactPoint <https://p-dekker.github.io/fdp/fdp.ttl#contactPoint>;
+  dcat:endpointDescription <https://p-dekker.github.io/fdp/fdp.ttl#endpoint>;
+  dcat:endpointURL <https://p-dekker.github.io/fdp/fdp.ttl> .
+
+<https://p-dekker.github.io/fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c> <http://www.w3.org/2000/01/rdf-schema#label>
+    "FAIR Data Point Profile", "FAIR Data Point Profile" .
+
+<https://p-dekker.github.io/fdp/metrics/445c0a70d1e214e545b261559e2842f4> <http://semanticscience.org/resource/SIO_000628>
+    <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://p-dekker.github.io/fdp/metrics/5d27e854a9e78eb3f663331cd47cdc13> <http://semanticscience.org/resource/SIO_000628>
+    <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
