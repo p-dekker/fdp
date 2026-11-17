@@ -36,7 +36,7 @@
   dcat:dataset <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl>,
     <https://p-dekker.github.io/fdp/dataset/56a33e43-40bf-46da-9c99-febff0ff3cfc.ttl>;
   dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
-  dcterms:conformsTo <https://p-dekker.github.io/fdp/profile/a0949e72-4466-4d53-8900-9436d1049a4b> .
+  dcterms:conformsTo <https://p-dekker.github.io/fdp/profile/a0949e72-4466-4d53-8900-9436d1049a4b.ttl> .
 
 <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl#identifier>
   a <http://purl.org/spar/datacite/Identifier>;
@@ -54,12 +54,12 @@
   <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
   <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
 
-<https://p-dekker.github.io/fdp/dataset/> a ldp:DirectContainer;
+<https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl#datasets> a ldp:DirectContainer;
   dcterms:title "Datasets";
   ldp:membershipResource <https://p-dekker.github.io/fdp/catalog/a5b24aa6-0ddc-411f-a1af-393f3dcc5c4e.ttl>;
   ldp:hasMemberRelation dcat:dataset;
   ldp:contains <https://p-dekker.github.io/fdp/dataset/9a466a29-a693-4a5a-aeee-54021e04a802.ttl>,
     <https://p-dekker.github.io/fdp/dataset/56a33e43-40bf-46da-9c99-febff0ff3cfc.ttl> .
 
-<https://p-dekker.github.io/fdp/profile/a0949e72-4466-4d53-8900-9436d1049a4b> <http://www.w3.org/2000/01/rdf-schema#label>
+<https://p-dekker.github.io/fdp/profile/a0949e72-4466-4d53-8900-9436d1049a4b.ttl> <http://www.w3.org/2000/01/rdf-schema#label>
     "Catalog Profile" .

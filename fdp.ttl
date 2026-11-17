@@ -13,8 +13,8 @@
   <https://w3id.org/fdp/fdp-o#metadataModified> "2026-11-02T14:06:55.937676442Z"^^xsd:dateTime;
   dcterms:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
   dcterms:description "Contains high-level information about our Whole Genome and Whole Transcriptome, tumour-normal pair cancer sequencing data."@en;
-  dcterms:conformsTo <https://p-dekker.github.io/fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c>,
-    <https://p-dekker.github.io/fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c>;
+  dcterms:conformsTo <https://p-dekker.github.io/fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c.ttl>,
+    <https://p-dekker.github.io/fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c.ttl>;
   dcterms:language <http://publications.europa.eu/resource/authority/language/ENG>;
   <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://p-dekker.github.io/fdp/fdp.ttl#identifier>;
   dcterms:identifier "https://p-dekker.github.io/fdp/fdp.ttl";
@@ -42,7 +42,7 @@
   foaf:homepage <https://www.hartwigmedicalfoundation.nl/>;
   foaf:mbox <mailto:dataaccess@hartwigmedicalfoundation.nl> .
 
-<https://p-dekker.github.io/fdp/catalog/> a ldp:DirectContainer, ldp:DirectContainer;
+<https://p-dekker.github.io/fdp/fdp.ttl#catalogs> a ldp:DirectContainer, ldp:DirectContainer;
   dcterms:title "Catalogs", "Catalogs";
   ldp:hasMemberRelation <https://w3id.org/fdp/fdp-o#metadataCatalog>, <https://w3id.org/fdp/fdp-o#metadataCatalog>;
   ldp:membershipResource <https://p-dekker.github.io/fdp/fdp.ttl>, <https://p-dekker.github.io/fdp/fdp.ttl>;
@@ -65,7 +65,7 @@
   dcat:endpointDescription <https://p-dekker.github.io/fdp/fdp.ttl#endpoint>;
   dcat:endpointURL <https://p-dekker.github.io/fdp/fdp.ttl> .
 
-<https://p-dekker.github.io/fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c> <http://www.w3.org/2000/01/rdf-schema#label>
+<https://p-dekker.github.io/fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c.ttl> <http://www.w3.org/2000/01/rdf-schema#label>
     "FAIR Data Point Profile", "FAIR Data Point Profile" .
 
 <https://p-dekker.github.io/fdp/metrics/445c0a70d1e214e545b261559e2842f4> <http://semanticscience.org/resource/SIO_000628>
